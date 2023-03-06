@@ -1,0 +1,25 @@
+{
+  "name": "herbify",
+  "version": "1.0.0",
+  "description": "A docker project on herbs ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codedhola/Herbify.git"
+  },
+  "keywords": [
+    "R.E.S.T",
+    "api",
+    "typescript",
+    "docker"
+  ],
+  "author": "coded hola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codedhola/Herbify/issues"
+  },
+  "homepage": "https://github.com/codedhola/Herbify#readme"
+}
