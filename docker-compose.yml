@@ -1,8 +1,23 @@
-version: '2.6'
+version: '3.6'
 services:
   app: 
     build: .
+    container_name: Herbify
+    ports:
+      - 5000:5000
+    env_file:
+      - .env
     depends_on:
       - postgres
   postgres: 
     image: postgres
+    environment:  
+      POSTGRES_USER: Hola
+      POSTGRES_DB: Herbify
+      POSTGRES_PASSWORD: Developer
+    ports:
+      - 5432:5432
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:
