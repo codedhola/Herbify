@@ -1,7 +1,7 @@
-import express, {Request, Response, NextFunction} from 'express'
+import express, {Request, Response, NextFunction, Application} from 'express'
+import { sequelize } from './db/index'
 
-
-const app = express()
+const app: Application = express()
 
 app.use(express.json())
 
@@ -18,6 +18,17 @@ app.get("/", async (req: Request, res: Response, next: NextFunction): Promise<Re
         })
     }
 })
+
+async function serverInit(){
+    try {
+        await sequelize.authenticate();
+        console.log('Connection has been established successfully.');
+      } catch (error) {
+        console.error('Unable to connect to the database:', error);
+      }
+
+}
+serverInit()
 
 const PORT: number = Number(process.env.PORT) || 4001
 
