@@ -5,7 +5,7 @@ const DB_DRIVER =  process.env.DB_DRIVER as Dialect
 
 console.log(DB_DRIVER)
 
-const sequelize = new Sequelize("Herbify", "postgres", "Developer", {
+const sequelize = new Sequelize("", "Hola", "password", {
     host: "localhost",
     dialect: DB_DRIVER
 })
