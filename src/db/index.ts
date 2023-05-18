@@ -3,13 +3,13 @@ import { Sequelize, Dialect } from "sequelize";
 
 const DB_DRIVER =  process.env.DB_DRIVER as Dialect
 
-console.log(DB_DRIVER)
+// console.log(DB_DRIVER)
 
-const sequelize = new Sequelize("", "Hola", "password", {
-    host: "localhost",
+const sequelizeConnection = new Sequelize("", "Hola", "developer", {
+    host: "db",
     dialect: DB_DRIVER
 })
 
 export {
-    sequelize
+    sequelizeConnection
 }

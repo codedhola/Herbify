@@ -1,5 +1,5 @@
 import express, {Request, Response, NextFunction, Application} from 'express'
-import userRoute from './api/routes/users.routes'
+import userRoute from './api/v1/routes/users.routes'
 
 const app: Application = express()
 
@@ -19,22 +19,7 @@ app.get("/", async (req: Request, res: Response, next: NextFunction): Promise<Re
             "Status": "Failed",
             "Response": "error"
         })
-    }
+    }  
 })
 
 export { app }
-
-// (async () => {
-//     try {
-//       await sequelize.sync(
-//         { force: false } //Reset db every time
-//       );
-//       const PORT: number = Number(process.env.PORT) || 4001
-      
-//       app.listen(PORT, () => {
-//           console.log(`App running... App instance on port ${PORT}`)
-//       })
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   })()
