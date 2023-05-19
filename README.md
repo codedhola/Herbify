@@ -1,4 +1,4 @@
-- [ ] project setup
+- [x] project setup
 - [ ] file structure setup
-- [ ] Docker setup 
+- [x] Docker setup 
 
