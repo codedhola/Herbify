@@ -5,4 +5,6 @@ const router = Router()
 
 router.get('/', User.getUsers)
 
+router.post('/', User.Register)
+
 export default router
