@@ -6,7 +6,7 @@ const app: Application = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 
-app.use('/api/v1', userRoute)
+app.use('/api/v1/users', userRoute)
 
 app.get("/", async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try{
