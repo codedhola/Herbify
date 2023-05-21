@@ -1,5 +1,5 @@
-import { sequelizeConnection } from './db/index'
-import { app } from './app'
+import { sequelizeConnection } from '@db/index'
+import { app } from '@/app'
 
 // import express, {Request, Response, NextFunction, Application} from 'express'
 // import userRoute from './api/v1/routes/users.routes'

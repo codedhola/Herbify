@@ -10,6 +10,11 @@ const sequelizeConnection = new Sequelize("", "Hola", "developer", {
     dialect: DB_DRIVER
 })
 
+// const sequelizeConnection = new Sequelize("one_farm_db", "postgres", "developer", {
+//     host: "localhost",
+//     dialect: DB_DRIVER  
+// })
+
 export {
     sequelizeConnection
 }

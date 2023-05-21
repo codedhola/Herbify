@@ -20,10 +20,10 @@
       "esModuleInterop": true,
       "resolveJsonModule": true,
       "importHelpers": true,
-      "baseUrl": "src",
+      "baseUrl": "./src",
       "paths": {
         "@/*": ["*"],
-        "@env": ["env.ts"],
+        // "@env": ["env.ts"],
         "@controllers/*": ["api/v1/controllers/*"],
         "@utils/*": ["api/v1/utils/*"],
         "@services/*": ["api/v1/services/*"],
