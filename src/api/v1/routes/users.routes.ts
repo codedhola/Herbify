@@ -1,10 +1,11 @@
 import { Router } from "express"
 import User from '@controllers/users.controllers'
+import AsyncHandler from "@middlewares/asyncHandler"
 
 const router = Router()
 
-router.get('/', User.getUsers)
+router.get('/', AsyncHandler(User.getUsers))
 
-router.post('/', User.Register)
+router.post('/', AsyncHandler(User.Register))
 
 export default router

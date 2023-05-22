@@ -1,5 +1,5 @@
 import {  Model, Sequelize, DataTypes ,UUIDV4} from 'sequelize'
-import { UserInterface } from '../interfaces/user.interface'
+import { UserInterface } from '@db/interfaces/user.interface'
 
 
 export class User extends Model<UserInterface> implements UserInterface {
