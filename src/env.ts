@@ -6,7 +6,7 @@ export const {
     DB_DRIVER, 
     HERBIFY_DB_USER,
     HERBIFY_DB_PASSWORD,
-    HERBIFY_DB_NAME
-
+    HERBIFY_DB_NAME,    
+    NODE_ENV
 } = process.env
 

@@ -1,5 +1,7 @@
 import express, {Request, Response, NextFunction, Application} from 'express'
-import userRoute from './api/v1/routes/users.routes'
+import userRoute from '@routes/users.routes'
+import AppError from '@middlewares/errorHandler'
+import errorServices from '@services/errorServices'
 
 const app: Application = express()
 
@@ -21,5 +23,12 @@ app.get("/", async (req: Request, res: Response, next: NextFunction): Promise<Re
         })
     }  
 })
+
+app.all("*", (req: Request, res: Response, next: NextFunction) => {
+    return next(new AppError("Route Not found", 404))
+})
+
+app.use(errorServices)
+
 
 export { app }
