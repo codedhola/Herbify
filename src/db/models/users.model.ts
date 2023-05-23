@@ -24,6 +24,7 @@ export async function initUser(sequelize: Sequelize){
         email: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique: true
             },
         password: {
             type: DataTypes.STRING,
@@ -33,7 +34,6 @@ export async function initUser(sequelize: Sequelize){
         sequelize,
         tableName: "user",
         modelName: "user",
-        paranoid: true,
         timestamps: true,
         freezeTableName: true
     })

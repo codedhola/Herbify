@@ -14,7 +14,7 @@ export class DB {
     admin: any
     images: any
     constructor(){
-        this.sequelize = new Sequelize("postgres", "postgres", "developer", {
+        this.sequelize = new Sequelize("herbify", "postgres", "developer", {
             host: "localhost",
             dialect: DB_DRIVER  
         })
@@ -30,7 +30,7 @@ export class DB {
         try{
             await this.associate()
 
-            await this.sequelize.sync({force: true})
+            await this.sequelize.sync({alter: true})
             .then(() => {
                 app.listen(PORT, () => {
                     console.log(`DB & Connected on port ${PORT}`)
