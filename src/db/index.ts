@@ -2,6 +2,7 @@ require('dotenv').config()
 import { Sequelize, Dialect } from 'sequelize';
 import { initUser } from './models/users.model';
 import { initHerb } from './models/herbs.model';
+import { initReview } from './models/reviews.model';
 import { app } from '@/app';
 import { PORT } from '@/env'
 const DB_DRIVER =  process.env.DB_DRIVER as Dialect
@@ -12,6 +13,7 @@ export class DB {
     sequelize: any
     user: any
     herb: any
+    review: any
     admin: any
     images: any
     constructor(){
@@ -21,8 +23,11 @@ export class DB {
         })
         initUser(this.sequelize)
         initHerb(this.sequelize)
+        initReview(this.sequelize)
+
         this.user = this.sequelize.models.user
         this.herb = this.sequelize.models.herb
+        this.review = this.sequelize.models.review
 
     }
 

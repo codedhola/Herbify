@@ -34,3 +34,18 @@ export class herbDTO {
     @Length(20, 200)
     categoryID!: string
 }
+
+export class ReviewDTO {
+    @IsNotEmpty()
+    @Length(2, 200)
+    comment!: string
+
+    @IsNotEmpty()
+    rating!: number
+
+    @IsNotEmpty()
+    herbID!: string
+
+    @IsNotEmpty()
+    userID!: string
+}
