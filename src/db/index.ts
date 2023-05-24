@@ -1,6 +1,7 @@
 require('dotenv').config()
 import { Sequelize, Dialect } from 'sequelize';
 import { initUser } from './models/users.model';
+import { initHerb } from './models/herbs.model';
 import { app } from '@/app';
 import { PORT } from '@/env'
 const DB_DRIVER =  process.env.DB_DRIVER as Dialect
@@ -19,7 +20,10 @@ export class DB {
             dialect: DB_DRIVER  
         })
         initUser(this.sequelize)
+        initHerb(this.sequelize)
         this.user = this.sequelize.models.user
+        this.herb = this.sequelize.models.herb
+
     }
 
     async associate(){

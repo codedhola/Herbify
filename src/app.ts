@@ -1,5 +1,6 @@
 import express, {Request, Response, NextFunction, Application} from 'express'
 import userRoute from '@routes/users.routes'
+import herbRoute from '@routes/herbs.routes'
 import AppError from '@middlewares/errorHandler'
 import errorServices from '@services/errorServices'
 
@@ -9,6 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 
 app.use('/api/v1/users', userRoute)
+app.use('/api/v1/herbs', herbRoute)
 
 app.get("/", async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try{
