@@ -3,7 +3,7 @@ import { Herb } from '@/db/models/herbs.model'
 import { herbDTO } from '@utils/dtos'
 import { validate } from 'class-validator'
 import ResponseCall from '@utils/Response'
-import AppError from '../middlewares/errorHandler'
+import AppError from '@middlewares/errorHandler'
 
 export default class HerbController {
 

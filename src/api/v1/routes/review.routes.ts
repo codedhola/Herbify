@@ -1,5 +1,5 @@
 import { Router } from "express"
-import Review from "../controllers/review.controllers"
+import Review from "@controllers/review.controllers"
 import AsyncHandler from "@middlewares/asyncHandler"
 
 const router = Router()

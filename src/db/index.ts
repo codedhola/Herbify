@@ -1,13 +1,12 @@
 require('dotenv').config()
 import { Sequelize, Dialect } from 'sequelize';
-import { initUser } from './models/users.model';
-import { initHerb } from './models/herbs.model';
-import { initReview } from './models/reviews.model';
+import { initUser } from '@db/models/users.model';
+import { initHerb } from '@db/models/herbs.model';
+import { initReview } from '@db/models/reviews.model';
 import { app } from '@/app';
 import { PORT } from '@/env'
+import { logger } from '@/api/v1/middlewares/logger';
 const DB_DRIVER =  process.env.DB_DRIVER as Dialect
-
-// console.log(DB_DRIVER)
 
 export class DB {
     sequelize: any
@@ -42,14 +41,14 @@ export class DB {
             await this.sequelize.sync({alter: true})
             .then(() => {
                 app.listen(PORT, () => {
-                    console.log(`DB & Connected on port ${PORT}`)
+                    logger.info(`DB & Connected on port ${PORT}`)
                 })    
             })
-            .catch((err: any) => console.log(err))
+            .catch((err: any) => logger.error(err))
 
         }catch(err){
-            console.log("Couldn't connect to the database")
-            console.log(err)
+            logger.info("Couldn't connect to the database")
+            logger.error(err)
         }
 
     }
@@ -58,21 +57,11 @@ export class DB {
         try{
             await this.sequelize.authenticate()
         }catch(err){
-            console.log(err)
+            logger.error(err)
         }
     }
 
 }
-
-// const sequelizeConnection = new Sequelize("", "Hola", "developer", {
-//     host: "db",
-//     dialect: DB_DRIVER
-// })
-
-// export const sequelizeConnection = new Sequelize("postgres", "postgres", "developer", {
-//     host: "localhost",
-//     dialect: DB_DRIVER  
-// })
 
 export const getDBInstance = async () => {
     const Db = new DB();

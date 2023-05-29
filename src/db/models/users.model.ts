@@ -1,12 +1,17 @@
 import {  Model, Sequelize, DataTypes ,UUIDV4} from 'sequelize'
 import { UserInterface } from '@db/interfaces/user.interface'
-
+import { generateKey } from '@/api/v1/utils/generateAPIKey'
 
 export class User extends Model<UserInterface> implements UserInterface {
    public id!: string
    public name!: string
    public email!: string
    public password!: string
+   public api_key!: string
+   
+   toJSON(): object {
+        return { ...this.get(), id: undefined}
+   }
 }
 
 export async function initUser(sequelize: Sequelize){
@@ -30,6 +35,10 @@ export async function initUser(sequelize: Sequelize){
             type: DataTypes.STRING,
             allowNull: false
             },
+        api_key: {
+            type: DataTypes.STRING,
+            defaultValue: await generateKey(16)
+        }
     }, {
         sequelize,
         tableName: "user",
