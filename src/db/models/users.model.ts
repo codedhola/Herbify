@@ -1,6 +1,6 @@
 import {  Model, Sequelize, DataTypes ,UUIDV4} from 'sequelize'
 import { UserInterface } from '@db/interfaces/user.interface'
-import { generateKey } from '@/api/v1/utils/generateAPIKey'
+import generateKey  from '@/api/v1/utils/generateAPIKey'
 
 export class User extends Model<UserInterface> implements UserInterface {
    public id!: string
@@ -37,7 +37,7 @@ export async function initUser(sequelize: Sequelize){
             },
         api_key: {
             type: DataTypes.STRING,
-            defaultValue: await generateKey(16)
+            defaultValue: generateKey()
         }
     }, {
         sequelize,

@@ -1,15 +1,9 @@
-import { promisify } from 'util'
-const randomBytesAsync = promisify(require('crypto').randomBytes)
 
-function getKey (size: number) { 
-  return randomBytesAsync(size)
-}
 
-// This will print the Buffer returned from crypto.randomBytes()
-getKey(16)
-  .then((key: any) => key.toString('hex'))
 
-export async function generateKey (num: number) {   
-    const key = await getKey(num)
-     return key.toString("hex")
-  }
+export default function genAPIKey(){
+  //create a base-36 string that contains 30 chars in a-z,0-9
+  return [...Array(30)]
+    .map((e) => ((Math.random() * 36) | 0).toString(36))
+    .join('');
+};

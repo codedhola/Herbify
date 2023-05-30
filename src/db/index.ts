@@ -6,6 +6,7 @@ import { initReview } from '@db/models/reviews.model';
 import { app } from '@/app';
 import { PORT } from '@/env'
 import { logger } from '@/api/v1/middlewares/logger';
+import { initCategory, seedCategory } from './models/category.model';
 const DB_DRIVER =  process.env.DB_DRIVER as Dialect
 
 export class DB {
@@ -14,24 +15,33 @@ export class DB {
     herb: any
     review: any
     admin: any
+    category: any
     images: any
     constructor(){
         this.sequelize = new Sequelize("herbify", "postgres", "developer", {
             host: "localhost",
             dialect: DB_DRIVER  
         })
-        initUser(this.sequelize)
         initHerb(this.sequelize)
+        initUser(this.sequelize)
         initReview(this.sequelize)
+        initCategory(this.sequelize)
 
         this.user = this.sequelize.models.user
         this.herb = this.sequelize.models.herb
         this.review = this.sequelize.models.review
+        this.category = this.sequelize.models.category
 
     }
 
     async associate(){
-        
+        this.review.belongsTo(this.herb, { foreignKey: "herb_id"})
+        this.review.belongsTo(this.user, { foreignKey: "user_id"})
+        this.herb.belongsTo(this.category, { foreignKey: "category_id"})
+    }
+
+    async seed() {
+        await seedCategory(this)
     }
 
     async authenticate(){
@@ -66,6 +76,6 @@ export class DB {
 export const getDBInstance = async () => {
     const Db = new DB();
     await Db.authenticate();
-    // await DB.seed();
+    await Db.seed();
     return DB;
 }

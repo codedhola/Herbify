@@ -4,5 +4,4 @@ export interface herbInterface {
     description: string
     effect: string
     botanicalName: string
-    categoryID: string
 }

@@ -8,7 +8,6 @@ export class Herb extends Model<herbInterface> implements herbInterface {
    public description!: string
    public botanicalName!: string
    public effect!: string
-   public categoryID!: string
 }
 
 export async function initHerb(sequelize: Sequelize){
@@ -34,10 +33,6 @@ export async function initHerb(sequelize: Sequelize){
             },
         effect: {
             type: DataTypes.INTEGER,
-            allowNull: false
-            },
-        categoryID: {
-            type: DataTypes.STRING,
             allowNull: false
             },
     }, {
