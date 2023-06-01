@@ -1,12 +1,12 @@
 require('dotenv').config()
 import { Sequelize, Dialect } from 'sequelize';
-import { initUser } from '@db/models/users.model';
+import { initUser, seedUser } from '@db/models/users.model';
 import { initHerb } from '@db/models/herbs.model';
 import { initReview } from '@db/models/reviews.model';
 import { app } from '@/app';
 import { PORT } from '@/env'
-import { logger } from '@/api/v1/middlewares/logger';
-import { initCategory, seedCategory } from './models/category.model';
+import { logger } from '@middlewares/logger';
+import { initCategory, seedCategory } from '@db/models/category.model';
 const DB_DRIVER =  process.env.DB_DRIVER as Dialect
 
 export class DB {
@@ -41,7 +41,8 @@ export class DB {
     }
 
     async seed() {
-        await seedCategory(this)
+        await seedCategory(this.category)
+        await seedUser(this.user)
     }
 
     async authenticate(){
@@ -76,6 +77,6 @@ export class DB {
 export const getDBInstance = async () => {
     const Db = new DB();
     await Db.authenticate();
-    await Db.seed();
+    await Db.seed()
     return DB;
 }

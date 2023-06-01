@@ -1,7 +1,7 @@
 // import { sequelizeConnection } from '@db/index'
-import { DB } from './db/index'
+import { DB, getDBInstance } from './db/index'
 
 
-const createConnection = new DB()
-createConnection.authenticate()
+const createConnection = getDBInstance;
+createConnection()
 

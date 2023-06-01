@@ -39,12 +39,10 @@ export async function initCategory(sequelize: Sequelize){
 
 export async function seedCategory(DB: any){
     
-    const category = await DB.category.findAndCountAll() 
-    logger.info(" let get this" + category)
-    logger.info("hello db")
+    const category = await DB.findAndCountAll() 
     if(!category.count){
       const data: Array<Pick<Category, "id" | "name" | "details">> = Category_Seed;
-      return await DB.category.bulkCreate(data, { returning: true });
+      return await DB.bulkCreate(data, { returning: true});
     }
   
   }

@@ -1,6 +1,4 @@
-
-
-
+  
 export default function genAPIKey(){
   //create a base-36 string that contains 30 chars in a-z,0-9
   return [...Array(30)]

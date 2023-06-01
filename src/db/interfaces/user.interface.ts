@@ -3,5 +3,6 @@ export interface UserInterface {
     email: string
     password: string
     name: string
+    role: string
     api_key: string
 } 
