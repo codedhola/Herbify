@@ -8,7 +8,7 @@
   - [Details here](https://crazymasalafood.com/20-herbs-types-you-can-use-in-cooking/)
 
 - Aromatic Herbs 
-  - [google](https://www.google.com/search?q=top+20+Aromatic+Herbs++and+their+medicinal+uses&sxsrf=APwXEdc8GG9eJ6w02gzFjDtBCph3A-U6-A%3A1684879862117&ei=9jltZOjeBuGD9u8P8YywoA0&ved=0ahUKEwjosa7Nuoz_AhXhgf0HHXEGDNQQ4dUDCA8&uact=5&oq=top+20+Aromatic+Herbs++and+their+medicinal+uses&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEMgUIABCiBDoKCAAQRxDWBBCwA0oECEEYAFCKCliKCmCUFWgBcAB4AIABrQKIAbkEkgEFMi0xLjGYAQCgAQKgAQHIAQjAAQE&sclient=gws-wiz-serp)
+  - [Details here](https://www.naturallivingideas.com/20-most-fragrant-herbs-flowers-for-an-aromatic-garden/)
 
 - Ornamental Herbs
   - [Details here](https://www.finegardening.com/article/10-ornamental-herbs)

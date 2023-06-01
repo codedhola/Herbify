@@ -118,7 +118,329 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         effect: 7,
         image: "https://previews.123rf.com/images/margo555/margo5551303/margo555130300057/18533937-thyme-fresh-herb-isolated-on-white-background.jpg"
 
-    }
+    },
 
-    // 
+    // CULINARY HERBS
+
+    
+    {
+        id: "50a8aa82-ecef-4354-8c0e-2c3dc96c5655",
+        name: "Cilantro",
+        description:"Coriander has areas of strength that are sometimes depicted as “lathery.” It works out positively for zesty food varieties. Cilantro is utilized in salsas, sautés, and curries. Cilantro doesn’t cook well and ought to be added just before serving for the best taste.",
+        botanicalName: "Coriandrum sativum",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Cilantro-1-672x420.jpg"
+
+    },
+    {
+        id: "dc8cb98b-786c-4226-9755-bc6614868acb",
+        name: "Basil",
+        description:"Basil is perhaps the leading culinary spice. Sweet basil, the most widely recognized type, is aromatic of licorice and cloves. It is utilized in sauces, sandwiches, soups, mixed greens, etc. It makes food delicious.",
+        botanicalName: "Ocimum basilicum",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Cilantro-1-672x420.jpg"
+
+    },
+    {
+        id: "fe496235-37fe-4191-803b-ef81ab71c73c",
+        name: "Lemon Grass",
+        description:"Lemongrass has a sharp lemon flavor and scent. It is typically used to enhance teas and soups and is often tracked down in Thai and Vietnamese cooking. To utilize lemongrass, cut off the top and base, and eliminate the external layers. It is an excellent herb for cooking and making food fantastic.",
+        botanicalName: "Cymbopogon citratus",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "af45d835-8a81-4a48-afce-babcccc1ebd0",
+        name: "Mint",
+        description:"Mint isn’t a tiny bit of twig that decorates your sweet plate. It can be used in sweet and flavorful dishes. Though there are numerous assortments, spearmint is liked for cooking. You can add it to a gathering of dishes and beverages like peas, carrots, frozen yogurt, tea, and mojitos.",
+        botanicalName: "Mentha",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Mint.jpg"
+
+    },
+    {
+        id: "eddb6b52-ac7f-43dc-94aa-880505d94293",
+        name: "Parsley",
+        description:"Parsley is a marginally peppery, new enhanced spice used to prepare various dishes and is often used for trimming. Search for level leaf or Italian parsley, which gives more flavor than wavy. Dried herb doesn’t have a severe serious taste, so utilize it whenever the situation allows.",
+        botanicalName: "Petroselinum crispum",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Parsley.webp"
+
+    },
+    {
+        id: "d7e5d290-22d7-4a1a-8f3e-b306ed83c29e",
+        name: "Tarragon",
+        description:"Tarragon frequently added to white wine vinegar, loaning sweet, fragile fragrance and flavor. It coordinates well with fish, omelets, and chicken cooked with mustard, and it’s a pivotal part of the sauce. Tarragon is generally challenging to track down; however, when you get it, you’ll adore the ambivalent, peppery taste it grants.",
+        botanicalName: "Artemisia dracunculus",
+        effect: 7,
+        image: "https://www.crazymasalafood.com/wp-content/images/2022/09/8.-Marjoram-1-2.png"
+
+    },
+    {
+        id: "5e8bba63-aed0-46ce-87e6-b2b7961c2a9a",
+        name: "Marjoram",
+        description:"Marjoram is like oregano, yet it is better and milder. Marjoram works out positively for meats like pork, sheep, and veal. Its flavor is best when added close to the furthest limit of the cooking system. It is an excellent, flavorful herb.",
+        botanicalName: "Origanum majorana",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Tarragon.webp"
+
+    },
+    {
+        id: "fa8b4269-fe47-41f2-b7b1-e32b688d32b0",
+        name: "Oregano",
+        description:"Oregano’s Greek name signifies “delight of the mountain.” The Greeks love oregano sprinkled on plates of mixed greens, while the Italians shower it on pizza and slip it into pureed tomatoes. Add hacked oregano to vinaigrette, or use it in poultry, game, or fish dishes when you need to take them in a Greek or Italian heading.",
+        botanicalName: "Origanum vulgare",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Oregano.jpg.webp"
+
+    },
+    {
+        id: "e3a07b62-8d50-484f-aa77-c84a92cd91aa",
+        name: "Savory",
+        description:"This is one more individual herb from the mint family, alongside oregano and marjoram — is a fragile spice with little, light green leaves and a near plant-like appearance. There are two kinds of delicious— winter and summer exquisite — and both taste unique.",
+        botanicalName: "Satureja",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Savory.webp"
+
+    },
+    {
+        id: "6a6d12cb-63e8-4fe8-8bae-3ac20f688acc",
+        name: "Curry Leaves",
+        description:"The leaves have an appearance like narrows leaves; however, marginally more modest in size is, additionally, named Indian straight leaves. Curry leaves have a particularly unpleasant and impactful taste with acidic undercurrents. The leaves are not just pursued their sweet-smelling flavor in the food varieties but also upgrade the medical advantages of the feast, making it seriously engaging.",
+        botanicalName: "Murraya koenigii",
+        effect: 7,
+        image: "https://crazymasalafood.com/wp-content/images/2023/01/Curry-Leaves.webp"
+
+    },
+
+
+    // AROMATIC HERBS
+
+
+    {
+        id: "0b77ef11-6736-4989-aea1-854a797c9eda",
+        name: "Gardenia",
+        description:`Gardenia are one of the most well-known and loved fragrances in the garden and are always a good choice for both their scent and their beautiful blooms and foliage.
+
+        These heat-loving evergreen shrubs don’t do well in cold weather though, so they are best grown in moderate year-round climates, or planted in pots and brought indoors once it starts to get chilly.
+        
+        Gardenias generally prefer partial shade and moist, yet well-drained acidic soil when outside and bright light and humidity when kept inside.`,
+        botanicalName: "",
+        effect: 7,
+        image: "https://www.gardenia.net/storage/app/public/guides/detail/U29oJlIbExvlWUd1VFRvKt3kxZqHzGnDGrStWW7T.webp"
+
+    },
+    {
+        id: "95102cdf-9ff8-4b76-aa0f-94427226d981",
+        name: "Dianthus",
+        description:`There are over 300 varieties of dianthus, including Sweet William, pinks, and carnations.
+
+        Many types of this genus have flowers with a fragrant, spicy smell similar to cinnamon or clove and most dianthus have pink, red or white flowers with notched petals.
+        
+        You can source hardy annual, biennial or perennial dianthus varieties.
+        
+        They are most often used in borders or potted displays and should be planted in full sun, with well-drained soil.`,
+        botanicalName: "",
+        effect: 7,
+        image: "https://www.naturallivingideas.com/wp-content/uploads/2016/03/Dianthus-600x399.jpg.webp"
+
+    },
+    {
+        id: "52ec94bc-5684-4cd5-8231-bf956b91af2f",
+        name: "Sweet Autumn Clematis",
+        description:`This hardy climber grows quickly, and features handsome, deep green leaves and a mass of star-shaped, fragrant white flowers.
+
+        The sweet autumn clematis is easy to grow but due to its invasive nature will require regular pruning.
+        
+        Position it in full sun and moist, yet well-drained soil.`,
+        botanicalName: "",
+        effect: 7,
+        image: "https://images.finegardening.com/app/uploads/2018/01/23141920/clematisterniflora_mg_2_lg-main-500x500.jpg"
+
+    },
+    {
+        id: "18deef12-bf5f-4cfa-8bb9-200c8131c4bb",
+        name: "Nicotiana",
+        description: `Nicotiana exists in variety of whites, pinks, reds and pastels – to fill your garden with a strong, sweet fragrance.
+
+        Because the trumpet-shaped flowers usually open in the evening or night, that’s when the scent will be strongest, so grow them on your patio or wherever you enjoy al fresco evening dining.
+        
+        Keep in mind they prefer full sun to partial shade and moist soil with good drainage.`,
+        botanicalName: "",
+        effect: 7,
+        image: "https://www.naturallivingideas.com/wp-content/uploads/2020/06/Nicotiana-768x512.jpg.webp"
+
+    },
+    {
+        id: "b3517864-fd5c-4dc4-9ca6-f6d7ed9b61a5",
+        name: "Oriental Lily",
+        description:`With a powerful scent, and beautiful speckled flower, Oriental lilies come in shades of white, pink and yellow.
+
+        Growing up to six feet, they often bloom in late summer when most other bulbs have finished.`,
+        botanicalName: "",
+        effect: 7,
+        image: "https://www.gardenia.net/storage/app/public/uploads/images/detail/7lGr6yvaQFvY9ZkhQYYp1Y8cisrKZhEQmf8FnJQq.webp"
+
+    },
+    {
+        id: "86f2cfa2-9e63-4b69-bbd6-bfc6b618367b",
+        name: "Calendula",
+        description:"",
+        botanicalName: `Calendula not only has a simple beauty, but it is edible, easy to maintain and offers numerous therapeutic uses.
+        Also known as ‘pot marigolds’, these annuals bloom constantly throughout the growing season.
+        The leaves are fragrant, and the flowers have a sweet, resin-like aroma … unlike most other plants traditionally grown for fragrance.
+        While calendula prefer full sun, they will tolerate light shade in warmer areas.`,
+        effect: 7,
+        image: "https://www.naturallivingideas.com/wp-content/uploads/2016/03/pot-marigold-600x399.jpg.webp"
+
+    },
+    {
+        id: "17aeaa5c-60b6-4bf1-99e1-461ce0c06101",
+        name: "Jasmine",
+        description:"Jasmine is as good as valium at calming the nerves…and with none of the side effects! To enjoy a truly relaxing backyard experience, a jasmine plant or two is a must!. It’s also an important ingredient in the perfume industry, with 83% of all women’s perfumes containing the fragrance.",
+        botanicalName: "",
+        effect: 7,
+        image: "https://st.depositphotos.com/1434090/4418/i/600/depositphotos_44186817-stock-photo-jasmine-flower-on-white-background.jpg"
+
+    },
+    {
+        id: "7eb41e5a-3db8-4b81-a659-80f7ec6d153c",
+        name: "Roses",
+        description:"Roses are undeniably beautiful. There are so many roses to choose from, but some of the best in terms of scent include the strongly fragrant ‘Honey Perfume’, the sweet and lemony ‘Heritage’, the rich and sweet ‘Fragrant Plum’",
+        botanicalName: "",
+        effect: 7,
+        image: "https://www.naturallivingideas.com/wp-content/uploads/2016/03/Yellow-Roses-600x399.jpg.webp"
+
+    },
+    {
+        id: "cbc7c195-df77-4146-857f-98c67627a18b",
+        name: "Scented Geraniums",
+        description:"These flowers are best placed along hedging, borders, or in your favorite place to sit in the garden – the leaves of these plants need to be touched or brushed in order to release their rich smell.",
+        botanicalName: "",
+        effect: 7,
+        image: "https://gardenerspath.com/wp-content/uploads/2021/06/Best-Scented-Geranium-Varieties-Cover.jpg"
+
+    },
+    {
+        id: "eb636a98-866b-49d2-9754-d10bf6db2e77",
+        name: "Juniper",
+        description:"Juniper shrubs don’t need to be pruned to maintain their shape, making them a low maintenance option for a boundary hedge. The National Wildlife Federation counts juniper shrubs as one of the top 10 plants for wildlife because they provide food, shelter and nesting sites for birds.",
+        botanicalName: "",
+        effect: 7,
+        image: "https://www.naturallivingideas.com/wp-content/uploads/2016/03/Juniper-600x398.jpg.webp"
+
+    },
+    {
+        id: "eb86e8b5-006a-4be5-bcf5-a0bf87bb561b",
+        name: "Eucalyptus",
+        description:"Eucalyptus, with its silvery aromatic leaves and bark which smells like a blend of menthol and sage, is a great addition to any fragranced garden. It prefers warmer climates – as it hails from Australia – although it thrives in moist, well-drained soil. Those who live in colder regions should grow eucalyptus in patio containers, and move indoors for the winter.",
+        botanicalName: "",
+        effect: 7,
+        image: "https://t4.ftcdn.net/jpg/01/98/72/11/360_F_198721162_0YqRFISNYBKBI82yPKYPBRPr9gq8G7p7.jpg"
+
+    },
+    {
+        id: "eb86e8b5-006a-4be5-bcf5-a0bf87bb561b",
+        name: "Bay Laurel",
+        description:"Bay has a sweet and strong scent with notes of warming nutmeg. Today, it is most well-known as a flavoring for soups and stews but it was once made into wreaths to crown the winners of ancient Greek games. Bay doesn’t do well in most regions as it is sensitive to frost, but it’s easy to grow in a pot and bring indoors when temperatures dip.",
+        botanicalName: "",
+        effect: 7,
+        image: "https://www.naturallivingideas.com/wp-content/uploads/2020/06/Bay-laurel-768x587.jpg.webp"
+
+    },
+
+
+    // ORNAMENTAL HERBS
+
+    {
+        id: "1a136288-f67a-43e1-b4ac-4cb717df98bf",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "6300d641-60e1-4587-a630-5cab09a82e8b",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "b146971a-900a-4d1a-815c-9c0de429ea57",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "20dab937-e79a-423b-a4c3-400d54dc1a9e",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "deb74e1e-8e3e-458c-bca4-3cf0e99c9267",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "e2fea679-7df2-4844-a761-ba1d6abd80bb",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "80df0e94-07a5-4d93-8cf5-f9a1e37a1248",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "556376e1-8236-4924-86c1-21213cd3e111",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "e09abe8d-da6a-4c63-9f02-a6c524bbe07e",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
+    {
+        id: "c4fcd621-25f0-41c4-be59-8b9f93110d9b",
+        name: "",
+        description:"",
+        botanicalName: "",
+        effect: 7,
+        image: ""
+
+    },
   ];
