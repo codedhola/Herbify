@@ -9,7 +9,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Ginger is a spice and herbal remedy that has been used for centuries in various cultures for its medicinal properties. Which helps in digestion, Anti-inflammatory, Pain Relief, Antioxidant, Blood Sugar Regulation, Immune Support. It's worth noting that while ginger has many potential health benefits, it is not a substitute for professional medical advice. If you have any specific health concerns or conditions, it's best to consult with a healthcare provider before incorporating ginger into your routine or using it as a medical treatment.",
         botanicalName: "Zingiber officinale",
         effect: 8,
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/800px-Koeh-146-no_text.jpg"
     },
     {
         id: "e99b8380-d14a-43c9-adc7-62e7d5a4423c",
@@ -17,7 +17,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Sage  is a perennial, evergreen subshrub, with woody stems, grayish leaves, and blue to purplish flowers. Sage has antimicrobial properties that may help fight against certain bacteria and fungi, making it beneficial for oral health. It is commonly found in natural mouthwashes and toothpaste to promote gum health and prevent oral infections.  Sage is widely used as a culinary herb, known for its distinct aroma and flavor. It is commonly used in cooking to enhance the taste of various dishes, particularly in Mediterranean cuisine",
         botanicalName: "Salvia officinalis",
         effect: 5,
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Salvia_officinalis0.jpg"
 
     },
     {
@@ -26,7 +26,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Turmeric plants (Curcuma longa) are highly valued for their rhizomes, which are commonly used as a spice and for their medicinal properties.  Turmeric has been used in traditional skincare practices for its potential benefits for the skin. It may help reduce inflammation, support wound healing, and improve the overall appearance of the skin.",
         botanicalName: "Zingiberaceae",
         effect: 7,
-        image: ""
+        image: "https://t3.ftcdn.net/jpg/02/70/09/88/360_F_270098811_CzjDTNmRXoQg78CKORlTe8oJDtR3WVTZ.jpg"
 
     },
     {
@@ -35,7 +35,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Garlic is a species of bulbous flowering plant in the genus Allium. Garlic has been traditionally used as a natural antimicrobial agent. It may help combat bacterial, viral, and fungal infections. It is sometimes used as a topical remedy for skin infections and as a natural remedy for respiratory tract infections. Garlic has been discovered to help in Cancer Prevention",
         botanicalName: "Allium sativum",
         effect: 7,
-        image: ""
+        image: "https://www.thespruceeats.com/thmb/6_fmgarRiHlvwbYJoSM_Wf2C6mI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/all-about-garlic-995693-hero-05-9cce07461e1a42cbbcfd3349e9506d48.jpg"
 
     },
     {
@@ -44,7 +44,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Peppermint is a hybrid species of mint, a cross between watermint and spearmint.  Peppermint oil applied topically or inhaled as a vapor has been found to provide relief from tension headaches and migraines. It may help relax muscles and improve blood flow in the head and neck area. Peppermint has a cooling and soothing effect on the respiratory system. It may help relieve symptoms of respiratory conditions such as coughs, congestion, sinusitis, and bronchitis. Peppermint oil vapor is often used in inhalation therapy or as an ingredient in cough syrups and chest rubs.",
         botanicalName: "Mentha x piperita",
         effect: 8,
-        image: ""
+        image: "https://previews.123rf.com/images/volff/volff1205/volff120500028/13585459-leaves-of-mint-on-a-white-background.jpg"
 
     },
     {
@@ -53,7 +53,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Echinacea is a genus of herbaceous flowering plants in the daisy family. It has ten species, which are commonly called coneflowers. Echinacea is often used to support and stimulate the immune system. It is believed to enhance the activity of immune cells, such as white blood cells, and promote the production of antibodies. It is commonly used as a natural remedy for the prevention and treatment of the common cold and other respiratory infections.",
         botanicalName: "coneflowers",
         effect: 5,
-        image: ""
+        image: "https://cdn.shopify.com/s/files/1/0072/0909/1117/products/Echinacea-vendor-unknown-1630679472.jpg"
 
     },
     {
@@ -62,7 +62,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"feverfew, is a flowering plant in the daisy family. Feverfew is commonly used as a natural remedy for migraines. It may help reduce the frequency, severity, and duration of migraine attacks. Some research suggests that feverfew may help prevent migraines by inhibiting the release of certain chemicals in the brain that can trigger migrain. Feverfew has been used to alleviate symptoms associated with menstruation, such as menstrual cramps and discomfort. It may help reduce the intensity and duration of menstrual pain.",
         botanicalName: "Tanacetum parthenium",
         effect: 7,
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/1/11/Feverfew_Flowers.jpg"
 
     },
     {
@@ -71,7 +71,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Holy Basil is an aromatic perennial plant in the family Lamiaceae. It is native to the Indian subcontinent and widespread as a cultivated plant throughout the Southeast Asian tropics.Holy basil is commonly used to support respiratory health. It may help alleviate symptoms of respiratory conditions like cough, cold, bronchitis, and asthma. Holy basil leaves are often used in herbal teas and remedies for respiratory relief. Also known for its positive effects on mood and cognitive function. It may help improve focus, concentration, and memory",
         botanicalName: "Allium sativum",
         effect: 7,
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Tulsi_or_Tulasi_Holy_basil.jpg"
 
     },
     {
@@ -80,7 +80,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Ginkgo or ginkgo, also known as the maidenhair tree, is a species of gymnosperm tree native to China. Ginkgo has been widely studied for its potential cognitive-enhancing effects. It may help improve memory, attention, and cognitive performance, particularly in older adults. Ginkgo is believed to enhance blood flow and oxygen supply to the brain, as well as possess antioxidant properties that protect against neuronal damage. Ginkgo has vasodilatory effects, meaning it helps widen blood vessels and improve blood flow.",
         botanicalName: "Ginkgo Biloba",
         effect: 7,
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Ginkgo_biloba_scanned_leaf.jpg/1200px-Ginkgo_biloba_scanned_leaf.jpg"
 
     },
     {
@@ -89,7 +89,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Lemon balm is a perennial herbaceous plant in the mint family and native to south-central Europe, the Mediterranean Basin, Iran, and Central Asia, but now naturalised elsewhere. Lemon balm is known for its calming effects on the nervous system. It may help reduce anxiety, promote relaxation, and improve sleep quality. Lemon balm is often used in herbal teas and aromatherapy for its soothing properties. Lemon balm has antiviral properties that may be beneficial in managing conditions caused by the herpes simplex virus, including cold sores (oral herpes). ",
         botanicalName: "Melissa officinalis",
         effect: 7,
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Lemon_balm_2.JPG/800px-Lemon_balm_2.JPG"
 
     },
     {
@@ -98,7 +98,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Rosemary is a shrub with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean region. Rosemary has been studied for its potential cognitive-enhancing effects. Inhalation or ingestion of rosemary aroma or extracts may help improve memory, concentration, and mental performance. Some research suggests that rosemary may have a positive impact on age-related cognitive decline and neurodegenerative disorders like Alzheimer's disease. Rosemary has been used traditionally to promote healthy hair and scalp.",
         botanicalName: "Salvia rosmarinus",
         effect: 7,
-        image: ""
+        image: "https://t3.ftcdn.net/jpg/03/80/58/52/360_F_380585291_6vARA4vxRyWAhUkdMExarlXNppMqOsoK.jpg"
 
     },
     {
@@ -107,7 +107,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Lavandula is a genus of 47 known species of flowering plants in the mint family. Lavender is widely recognized for its calming and relaxation-inducing properties. Inhalation of lavender essential oil or using lavender products, such as bath oils or candles, may help reduce stress, anxiety, and promote relaxation. It is often used in aromatherapy for its soothing effects. Lavender is commonly used to improve sleep quality.",
         botanicalName: "Lavandula",
         effect: 7,
-        image: ""
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Lavender.JPG/1200px-Lavender.JPG"
 
     },
     {
@@ -116,7 +116,7 @@ export const Herb_Seed:Array<Pick<Herb, "id" | "name" | "description" | "botanic
         description:"Thyme has been used to support digestive health and promote healthy digestion. It may help relieve indigestion, gas, and bloating. Thyme tea or infused water can be consumed for its digestive benefits. Thyme may have potential benefits for heart health. Thyme is known for its expectorant properties, which may help promote the clearance of mucus and phlegm from the airways.",
         botanicalName: "Thymus vulgaris",
         effect: 7,
-        image: ""
+        image: "https://previews.123rf.com/images/margo555/margo5551303/margo555130300057/18533937-thyme-fresh-herb-isolated-on-white-background.jpg"
 
     }
 
