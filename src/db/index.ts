@@ -1,7 +1,7 @@
 require('dotenv').config()
 import { Sequelize, Dialect } from 'sequelize';
 import { initUser, seedUser } from '@db/models/users.model';
-import { initHerb } from '@db/models/herbs.model';
+import { initHerb, seedHerb } from '@db/models/herbs.model';
 import { initReview } from '@db/models/reviews.model';
 import { app } from '@/app';
 import { PORT } from '@/env'
@@ -43,6 +43,7 @@ export class DB {
     async seed() {
         await seedCategory(this.category)
         await seedUser(this.user)
+        await seedHerb(this.herb)
     }
 
     async authenticate(){

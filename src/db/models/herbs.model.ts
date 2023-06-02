@@ -29,7 +29,7 @@ export async function initHerb(sequelize: Sequelize){
             allowNull: false
             },
         botanicalName: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(400),
             allowNull: true
             },
         effect: {
@@ -37,7 +37,7 @@ export async function initHerb(sequelize: Sequelize){
             allowNull: false
             },
         image: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(400),
             allowNull: true
         }
     }, {
@@ -55,7 +55,7 @@ export async function seedHerb(DB: any){
     const Herbs = await DB.findAndCountAll() 
 
     if(!Herbs.count){
-      const data: Array<Pick<Herb, "id" | "name" | "description" | "botanicalName" | "effect">> = Herb_Seed;
+      const data: Array<Pick<Herb | any, "id" | "name" | "description" | "botanicalName" | "effect" | "image" | "category_id">> = Herb_Seed;
       return await DB.bulkCreate(data, { returning: true });
     }
   
