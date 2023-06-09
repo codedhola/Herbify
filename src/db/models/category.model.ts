@@ -24,7 +24,7 @@ export async function initCategory(sequelize: Sequelize){
             unique: true
         },
         details: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: false
             }
     }, {

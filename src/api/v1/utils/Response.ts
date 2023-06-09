@@ -1,30 +1,26 @@
-import { Response } from "express"
+import { Response } from "express";
 
 export default class ResponseCall {
-    
-    static success(res: Response, data: any, status: number = 200){
-
+    static success(res: Response, data: any, status: number = 200) {
         return res.status(status).json({
             status: "success",
             response: {
-                data
-            }
-        })
+                data,
+            },
+        });
     }
 
-    static fail(res: Response, error: any, status: number = 400){
-
+    static fail(res: Response, error: any, status: number = 400) {
         res.status(status).json({
             status: "fail",
-                error
-        })
+            error,
+        });
     }
 
-    static error(res: Response, error: any, status: number = 500){
-
+    static error(res: Response, error: any, status: number = 500) {
         return res.status(status).json({
             status: "error",
-            error
-        })
+            error,
+        });
     }
-  }
+}
